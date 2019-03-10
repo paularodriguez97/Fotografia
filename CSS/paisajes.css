@@ -1,0 +1,66 @@
+header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+}
+header p{
+  text-align: left;
+  color: white;
+  text-shadow: 2px 2px 2px  #02010a;
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 50px;
+  margin: 20px 20px;
+}
+#nav{
+  font-size: 30px;
+  margin: 60px 30px 0px 0px;
+  display: inline-flex;
+  flex-direction: row;
+  float: right;
+}
+a[href^='Paisajes']{
+  text-decoration: underline;
+}
+.galeria1, .galeria2{
+  background-color: #82c3a6;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+img{
+  margin-top: 30px;
+  width: 90%;
+}
+article div p {
+  text-align: center;
+}
+#img1{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.img2, .img4, .img6{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.img3{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+footer{
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: #C6d5c5;
+}
+footer div{
+  text-align: center;
+  margin: 20px;
+  width: 25%;
+}
+.reds img{
+  width: 20px;
+}
+footer div + p{
+  font-size: 15px;
+  font-weight: normal;
+}

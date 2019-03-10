@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('Fuentes/DancingScript-Bold.ttf');
+}
+body{
+  font-family: 'Dancing Script';
+  background-color: #02010a;
+  text-align: center;
+}
+.contenido{
+  text-align: center;
+  width: 900px;
+}
+img{
+  box-shadow: 2px 2px 2px #02010a;
+  width: 80%;
+  margin: 10px 10px 0px 10px;
+}
+header{
+  background-color: #5b7989;
+  color: white;
+  text-align: left;
+  text-shadow: 2px 2px 2px #02010a;
+  font-size: 40px;
+  border-radius: 10px 10px 0px 0px;
+  height: 100px;
+}
+header p{
+  display: inline;
+}
+header nav{
+  display: inline;
+  margin-top: 20px;
+  float: right;
+}
+header a{
+  font-size: 20px;
+  color: white;
+}
+.imgc{
+  text-align: center;
+  background-color:  #82c3a6;
+  border: 1px solid black;
+}
+.imgs{
+  background-color: #d5c75f;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+#i1{
+  box-shadow: 2px 2px 2px #82c3a6;
+  border: 2px solid black;
+}
+#i2{
+  box-shadow: 2px 2px 2px #02010a;
+  transition: transform border box-shadow 2s 2s 2s;
+  margin-top: 100px;
+}
+#i2:hover{
+  border: 2px solid black;
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6 ;
+}
+#i3{
+  box-shadow: 2px 2px 2px #02010a;
+  transition: transform border box-shadow 2s 2s 2s;
+}
+#i3:hover{
+  border: 2px solid black;
+  transform: translate(20px, -5px);
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+footer{
+  border: 1px solid black;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: #C6d5c5;
+}
+footer div{
+  margin: 20px;
+  width: 25%;
+}
+.reds img{
+  width: 20px;
+}
+@media (max-width: 900px) {
+  body{
+    font-family: 'Dancing Script';
+    background-color: #02010a;
+  }
+  .contenido{
+    text-align: center;
+    width: 100%;
+  }
+  img{
+    box-shadow: 2px 2px 2px #02010a;
+    width: 80%;
+    margin: 10px 10px 0px 10px;
+  }
+  header{
+    background-color: #5b7989;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px #02010a;
+    font-size: 40px;
+    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+    height: 100px;
+  }
+
+  .imgc{
+    text-align: center;
+    background-color:  #82c3a6;
+    border: 1px solid black;
+  }
+  .imgs{
+    background-color: #d5c75f;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+  }
+  #i1{
+    box-shadow: 2px 2px 2px #82c3a6;
+    border: 2px solid black;
+  }
+  #i2{
+    box-shadow: 2px 2px 2px #02010a;
+    transition: transform border box-shadow 2s 2s 2s;
+    margin-top: 100px;
+  }
+  #i2:hover{
+    border: 2px solid black;
+    transform: rotate(10deg);
+    box-shadow: 2px 2px 2px #82c3a6 ;
+  }
+  #i3{
+    box-shadow: 2px 2px 2px #02010a;
+    transition: transform border box-shadow 2s 2s 2s;
+  }
+  #i3:hover{
+    border: 2px solid black;
+    transform: translate(20px, -5px);
+    box-shadow: 2px 2px 2px #82c3a6;
+  }
+  footer{
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #C6d5c5;
+  }
+  footer div{
+    margin: 20px;
+    width: 25%;
+  }
+  .reds img{
+    width: 20px;
+  }
