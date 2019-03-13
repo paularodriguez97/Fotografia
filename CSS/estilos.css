@@ -1,41 +1,47 @@
-@font-face {
-  font-family: 'Dancing Script';
-  src: url('Fuentes/DancingScript-Bold.ttf');
-}
+
 body{
   font-family: 'Dancing Script';
   background-color: #02010a;
-  text-align: center;
-}
-.contenido{
-  text-align: center;
   width: 900px;
+  margin: 0 auto;
 }
+
+
+
+
+
+header{
+  background-color: #5b7989;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  flex-direction: row;
+}
+header h1{
+  margin-left: 20px;
+  text-align: left;
+}
+header nav {
+  float: right;
+}
+header nav a{
+  font-size: 1.5em;
+  color: white;
+  padding-right: 20px;
+}
+header nav a:nth-child(1){
+  text-decoration: none;
+}
+
+
+
+
+
 img{
   box-shadow: 2px 2px 2px #02010a;
   width: 80%;
   margin: 10px 10px 0px 10px;
-}
-header{
-  background-color: #5b7989;
-  color: white;
-  text-align: left;
-  text-shadow: 2px 2px 2px #02010a;
-  font-size: 40px;
-  border-radius: 10px 10px 0px 0px;
-  height: 100px;
-}
-header p{
-  display: inline;
-}
-header nav{
-  display: inline;
-  margin-top: 20px;
-  float: right;
-}
-header a{
-  font-size: 20px;
-  color: white;
 }
 .imgc{
   text-align: center;
@@ -43,6 +49,7 @@ header a{
   border: 1px solid black;
 }
 .imgs{
+  text-align: center;
   background-color: #d5c75f;
   border: 1px solid black;
   display: flex;
@@ -54,8 +61,8 @@ header a{
 }
 #i2{
   box-shadow: 2px 2px 2px #02010a;
-  transition: transform border box-shadow 2s 2s 2s;
-  margin-top: 100px;
+  transition-property: rotate border box-shadow;
+  transition-duration: 1s;
 }
 #i2:hover{
   border: 2px solid black;
@@ -64,14 +71,24 @@ header a{
 }
 #i3{
   box-shadow: 2px 2px 2px #02010a;
-  transition: transform border box-shadow 2s 2s 2s;
+  transition: translate border box-shadow;
+  transition-duration: 1s;
 }
 #i3:hover{
   border: 2px solid black;
   transform: translate(20px, -5px);
   box-shadow: 2px 2px 2px #82c3a6;
 }
+.reds img, .ter img{
+  width: 10%;
+}
+
+
+
+
+
 footer{
+  text-align: justify;
   border: 1px solid black;
   border-radius: 0px 0px 10px 10px;
   display: flex;
@@ -82,78 +99,68 @@ footer div{
   margin: 20px;
   width: 25%;
 }
-.reds img{
-  width: 20px;
-}
-@media (max-width: 900px) {
-  body{
-    font-family: 'Dancing Script';
-    background-color: #02010a;
-  }
-  .contenido{
-    text-align: center;
-    width: 100%;
-  }
-  img{
-    box-shadow: 2px 2px 2px #02010a;
-    width: 80%;
-    margin: 10px 10px 0px 10px;
-  }
-  header{
-    background-color: #5b7989;
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 2px #02010a;
-    font-size: 40px;
-    border: 1px solid black;
-    border-radius: 10px 10px 0px 0px;
-    height: 100px;
-  }
 
-  .imgc{
-    text-align: center;
-    background-color:  #82c3a6;
-    border: 1px solid black;
-  }
-  .imgs{
-    background-color: #d5c75f;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-  }
-  #i1{
-    box-shadow: 2px 2px 2px #82c3a6;
-    border: 2px solid black;
-  }
-  #i2{
-    box-shadow: 2px 2px 2px #02010a;
-    transition: transform border box-shadow 2s 2s 2s;
-    margin-top: 100px;
-  }
-  #i2:hover{
-    border: 2px solid black;
-    transform: rotate(10deg);
-    box-shadow: 2px 2px 2px #82c3a6 ;
-  }
-  #i3{
-    box-shadow: 2px 2px 2px #02010a;
-    transition: transform border box-shadow 2s 2s 2s;
-  }
-  #i3:hover{
-    border: 2px solid black;
-    transform: translate(20px, -5px);
-    box-shadow: 2px 2px 2px #82c3a6;
-  }
-  footer{
-    border-radius: 0px 0px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    background-color: #C6d5c5;
-  }
-  footer div{
-    margin: 20px;
-    width: 25%;
-  }
-  .reds img{
-    width: 20px;
-  }
+
+
+
+
+
+
+ @media (max-width: 900px) {
+
+   body{
+     font-family: 'Dancing Script';
+     background-color: #02010a;
+     margin: 0 auto;
+     width: 100%;
+   }
+
+
+
+
+   header{
+     background-color: #5b7989;
+     color: white;
+     text-shadow: 2px 2px 2px #02010a;
+     border-radius: 10px 10px 0px 0px;
+     display: flex;
+     flex-direction: column;
+   }
+   header h1{
+     margin-left: 20px;
+     text-align: center;
+   }
+   header nav {
+     text-align: center;
+   }
+   header nav a:nth-child(1){
+     text-decoration: none;
+     padding-left: 0px;
+   }
+
+
+
+   img{
+     box-shadow: 2px 2px 2px #02010a;
+     width: 70%;
+     margin: 10px 10px 0px 10px;
+   }
+   .imgs{
+     text-align: center;
+     background-color: #d5c75f;
+     border: 1px solid black;
+     display: flex;
+     flex-direction: column;
+   }
+
+
+
+
+   footer{
+     text-align: justify;
+     border: 1px solid black;
+     border-radius: 0px 0px 10px 10px;
+     display: flex;
+     flex-direction: column;
+     background-color: #C6d5c5;
+   }
