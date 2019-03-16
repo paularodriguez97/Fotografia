@@ -1,3 +1,4 @@
+
 body{
   font-family: 'Dancing Script';
   background-color: #02010a;
@@ -16,18 +17,25 @@ header{
   border-radius: 10px 10px 0px 0px;
   display: flex;
   flex-direction: row;
+  -o-animation: Slidein 1s;
+  -moz-animation: Slidein 1s;
+  -webkit-animation: Slidein 1s;
 }
 header h1{
   margin-left: 20px;
   text-align: left;
+  width: 50%;
 }
 header nav {
   float: right;
+  padding: 30px 20px;
+  width: 50%;
+  text-align: right;
 }
 header nav a{
   font-size: 1.5em;
   color: white;
-  padding-right: 20px;
+  padding-left: 40px;
 }
 header nav a:nth-child(3){
   text-decoration: none;
@@ -62,22 +70,6 @@ article div h3 {
   -webkit-filter: sepia(90%);
   filter: sepia(90%);
 }
-
-
-
-
-
-footer{
-    border-radius: 0px 0px 10px 10px;
-    display: flex;
-    flex-direction: row;
-    background-color: #C6d5c5;
-}
-footer div{
-  text-align: justify;
-  margin: 20px;
-  width: 25%;
-}
 .reds img, .ter img{
   width: 10%;
 }
@@ -85,8 +77,41 @@ footer div{
 
 
 
+footer{
+  text-align: justify;
+  border: 1px solid black;
+  border-radius: 0px 0px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: #C6d5c5;
+}
+footer div{
+  margin: 20px;
+  width: 25%;
+}
 
- @media (max-width: 900px) {
+
+
+
+
+-webkit-keyframes Slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+
+
+
+
+
+ @media screen and (max-width: 900px) {
 
    body{
      font-family: 'Dancing Script';
@@ -109,13 +134,18 @@ footer div{
    header h1{
      margin-left: 20px;
      text-align: center;
+     width: 100%;
    }
    header nav {
      text-align: center;
+     padding-bottom: 20px;
+     padding-top: 0px;
+     width: 100%;
    }
-   header nav a:nth-child(3){
-     text-decoration: none;
-     padding-left: 0px;
+   header nav a{
+     font-size: 1.5em;
+     color: white;
+     padding-left: 20px;
    }
 
 
@@ -134,9 +164,12 @@ footer div{
 
 
 
-    footer{
-         border-radius: 0px 0px 10px 10px;
-         display: flex;
-         flex-direction: column;
-         background-color: #C6d5c5;
-     }
+
+   footer{
+     text-align: justify;
+     border: 1px solid black;
+     border-radius: 0px 0px 10px 10px;
+     display: flex;
+     flex-direction: column;
+     background-color: #C6d5c5;
+   }
