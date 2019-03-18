@@ -1,13 +1,23 @@
-
-body{
-  font-family: 'Dancing Script';
-  background-color: #02010a;
-  width: 900px;
-  margin: 0 auto;
+@-webkit-keyframes Slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
 
 
 
+
+
+body{
+  font-family: 'Dancing Script';
+  background-color: #02010a;
+}
 
 
 header{
@@ -15,27 +25,13 @@ header{
   color: white;
   text-shadow: 2px 2px 2px #02010a;
   border-radius: 10px 10px 0px 0px;
-  display: flex;
-  flex-direction: row;
   -o-animation: Slidein 1s;
   -moz-animation: Slidein 1s;
   -webkit-animation: Slidein 1s;
 }
-header h1{
-  margin-left: 20px;
-  text-align: left;
-  width: 50%;
-}
-header nav {
-  float: right;
-  padding: 30px 20px;
-  width: 50%;
-  text-align: right;
-}
 header nav a{
   font-size: 1.5em;
   color: white;
-  padding-left: 40px;
 }
 header nav a:nth-child(1){
   text-decoration: none;
@@ -47,24 +43,21 @@ header nav a:nth-child(1){
 
 img{
   box-shadow: 2px 2px 2px #02010a;
-  width: 80%;
   margin: 10px 10px 0px 10px;
 }
 .imgc{
   text-align: center;
   background-color:  #82c3a6;
-  border: 1px solid black;
 }
 .imgs{
   text-align: center;
   background-color: #d5c75f;
   border: 1px solid black;
-  display: flex;
-  flex-direction: row;
 }
 #i1{
   box-shadow: 2px 2px 2px #82c3a6;
   border: 2px solid black;
+  margin:20px;
 }
 #i2{
   box-shadow: 2px 2px 2px #02010a;
@@ -95,100 +88,107 @@ img{
 
 
 footer{
-  text-align: justify;
-  border: 1px solid black;
   border-radius: 0px 0px 10px 10px;
-  display: flex;
-  flex-direction: row;
   background-color: #C6d5c5;
 }
 footer div{
   margin: 20px;
-  width: 25%;
 }
 
 
 
 
+ @media screen and (min-width: 900px) {
+   body{
+     width: 900px;
+     margin: 0 auto;
+   }
 
--webkit-keyframes Slidein{
-  0%{
-    margin-top: 150%;
-  }
-  60%{
-    margin-top: -5%;
-  }
-  100%{
-    margin-top: 0%;
-  }
+
+   header{
+     display: flex;
+     flex-direction: row;
+   }
+   header h1{
+     margin-left: 20px;
+     text-align: left;
+     width: 50%;
+   }
+   header nav {
+     float: right;
+     padding: 30px 20px;
+     width: 50%;
+     text-align: right;
+   }
+   header nav a{
+     padding-left: 40px;
+   }
+
+
+
+   img{
+     width: 80%;
+   }
+   .imgs{
+     display: flex;
+     flex-direction: row;
+     min-height: 380px;
+     padding: 20px;
+   }
+
+
+
+   footer{
+     display: flex;
+     flex-direction: row;
+   }
+   footer div{
+     width: 25%;
+   }
 }
-
-
-
 
 
 
  @media screen and (max-width: 900px) {
 
    body{
-     font-family: 'Dancing Script';
-     background-color: #02010a;
      margin: 0 auto;
      width: 100%;
    }
 
 
 
-
    header{
-     background-color: #5b7989;
-     color: white;
-     text-shadow: 2px 2px 2px #02010a;
-     border-radius: 10px 10px 0px 0px;
      display: flex;
      flex-direction: column;
+     width: 100%;
    }
    header h1{
-     margin-left: 20px;
      text-align: center;
-     width: 100%;
    }
    header nav {
      text-align: center;
      padding-bottom: 20px;
      padding-top: 0px;
-     width: 100%;
    }
    header nav a{
-     font-size: 1.5em;
-     color: white;
-     padding-left: 20px;
+     padding: 0 10px;
    }
-
 
 
 
    img{
-     box-shadow: 2px 2px 2px #02010a;
      width: 70%;
-     margin: 10px 10px 0px 10px;
    }
    .imgs{
-     text-align: center;
-     background-color: #d5c75f;
-     border: 1px solid black;
      display: flex;
      flex-direction: column;
+     padding-top: 15px;
    }
-
-
 
 
    footer{
-     text-align: justify;
-     border: 1px solid black;
-     border-radius: 0px 0px 10px 10px;
      display: flex;
      flex-direction: column;
-     background-color: #C6d5c5;
    }
+  }

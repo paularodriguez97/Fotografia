@@ -1,13 +1,23 @@
-
-body{
-  font-family: 'Dancing Script';
-  background-color: #02010a;
-  width: 900px;
-  margin: 0 auto;
+@-webkit-keyframes Slidein{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
 }
 
 
 
+
+
+body{
+  font-family: 'Dancing Script';
+  background-color: #02010a;
+}
 
 
 header{
@@ -15,27 +25,13 @@ header{
   color: white;
   text-shadow: 2px 2px 2px #02010a;
   border-radius: 10px 10px 0px 0px;
-  display: flex;
-  flex-direction: row;
   -o-animation: Slidein 1s;
   -moz-animation: Slidein 1s;
   -webkit-animation: Slidein 1s;
 }
-header h1{
-  margin-left: 20px;
-  text-align: left;
-  width: 50%;
-}
-header nav {
-  float: right;
-  padding: 30px 20px;
-  width: 50%;
-  text-align: right;
-}
 header nav a{
   font-size: 1.5em;
   color: white;
-  padding-left: 40px;
 }
 header nav a:nth-child(2){
   text-decoration: none;
@@ -44,11 +40,8 @@ header nav a:nth-child(2){
 
 
 
-
 .galeria1, .galeria2{
   background-color: #d5c75f;
-  display: flex;
-  flex-direction: row;
   text-align: center;
 }
 img{
@@ -77,100 +70,95 @@ article div h3 {
 
 
 
-
 footer{
-  text-align: justify;
-  border: 1px solid black;
   border-radius: 0px 0px 10px 10px;
-  display: flex;
-  flex-direction: row;
   background-color: #C6d5c5;
 }
 footer div{
   margin: 20px;
-  width: 25%;
 }
 
 
 
 
-
--webkit-keyframes Slidein{
-  0%{
-    margin-top: 150%;
-  }
-  60%{
-    margin-top: -5%;
-  }
-  100%{
-    margin-top: 0%;
-  }
-}
+ @media screen and (min-width: 900px) {
+   body{
+     width: 900px;
+     margin: 0 auto;
+   }
 
 
+   header{
+     display: flex;
+     flex-direction: row;
+   }
+   header h1{
+     margin-left: 20px;
+     text-align: left;
+     width: 50%;
+   }
+   header nav {
+     float: right;
+     padding: 30px 20px;
+     width: 50%;
+     text-align: right;
+   }
+   header nav a{
+     padding-left: 40px;
+   }
 
 
 
+   .galeria1, .galeria2{
+     display: flex;
+     flex-direction: row;
+   }
+
+
+   footer{
+     display: flex;
+     flex-direction: row;
+   }
+   footer div{
+     width: 25%;
+   }
+   }
 
  @media screen and (max-width: 900px) {
-
    body{
-     font-family: 'Dancing Script';
-     background-color: #02010a;
      margin: 0 auto;
      width: 100%;
    }
 
 
 
-
    header{
-     background-color: #5b7989;
-     color: white;
-     text-shadow: 2px 2px 2px #02010a;
-     border-radius: 10px 10px 0px 0px;
      display: flex;
      flex-direction: column;
+     width: 100%;
    }
    header h1{
-     margin-left: 20px;
      text-align: center;
-     width: 100%;
    }
    header nav {
      text-align: center;
      padding-bottom: 20px;
      padding-top: 0px;
-     width: 100%;
    }
    header nav a{
-     font-size: 1.5em;
-     color: white;
-     padding-left: 20px;
+     padding: 0 10px;
    }
-
-
 
 
    .galeria1, .galeria2{
-     background-color: #d5c75f;
      display: flex;
      flex-direction: column;
-     text-align: center;
    }
-   img{
-     margin-top: 30px;
-     width: 80%;
-   }
-
 
 
 
    footer{
-     text-align: justify;
-     border: 1px solid black;
-     border-radius: 0px 0px 10px 10px;
      display: flex;
      flex-direction: column;
-     background-color: #C6d5c5;
    }
+  }
